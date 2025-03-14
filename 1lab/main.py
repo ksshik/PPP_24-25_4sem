@@ -208,3 +208,22 @@ class Client:
         logging.info("Клиент завершил работу")
         print("Соединение закрыто")
 
+def main():
+    if len(sys.argv) != 2:
+        print("Использование: python 1lab/main.py [server|client]")
+        sys.exit(1)
+    
+    mode = sys.argv[1].lower()
+    
+    if mode == "server":
+        server = Server()
+        server.start()  # запустить сервер
+    elif mode == "client":
+        client = Client()
+        client.start()  # запустить клиента
+    else:
+        print("Неизвестный режим. Используйте 'server' или 'client'.")
+        sys.exit(1)
+
+if __name__ == "__main__":
+    main()
