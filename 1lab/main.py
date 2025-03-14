@@ -222,7 +222,7 @@ def main():
         client = Client()
         client.start()  # запустить клиента
     else:
-        print("Неизвестный режим. Используйте 'server' или 'client'.")
+        print("Неизвестный режим. Используйте 'server' или 'client'")
         sys.exit(1)
 
 if name == "main":
