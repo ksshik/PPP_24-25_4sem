@@ -1,5 +1,4 @@
 import os  
-<<<<<<< HEAD
 import sys  
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))  # Добавление пути к корневой папке
@@ -9,16 +8,6 @@ import uvicorn
 from app.api.endpoints import auth, image 
 
 app = FastAPI() 
-
-=======
-import sys 
-from fastapi import FastAPI, WebSocket  
-import uvicorn  
-from app.api.endpoints import auth, image  
-
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))  # Добавление пути к корневой папке
-app = FastAPI() 
->>>>>>> 89b9e74d5a782a17531ee52bb7e34a8641551291
 app.include_router(auth.router, prefix="/auth", tags=["auth"])  # Подключение роутеров
 app.include_router(image.router, prefix="/image", tags=["image"])  
 
