@@ -1,5 +1,5 @@
 from fastapi import APIRouter, Depends, HTTPException, File, UploadFile
-from app.schemas.image import ImageBinarizationRequest
+from app.schemas.media import ImageBinarizationRequest
 import base64
 from io import BytesIO
 from PIL import Image

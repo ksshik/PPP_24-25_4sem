@@ -5,8 +5,8 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from logging.config import fileConfig
 from sqlalchemy import engine_from_config, pool
 from alembic import context
-from app.db.base import Base
-from app.models.user import User  
+from app.db.models_base import Base
+from app.models.account import User  
 from app.core.config import settings
 
 config = context.config

@@ -1,5 +1,5 @@
 from fastapi import WebSocket  
-from app.services.binarization import binarize_image  
+from app.services.image_processing import binarize_image  
 
 async def websocket_endpoint(websocket: WebSocket):  # определение асинхронного эндпоинта WebSocket
     await websocket.accept()  

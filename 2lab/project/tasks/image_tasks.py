@@ -1,6 +1,6 @@
 from celery import Celery  
 from app.core.config import settings  
-from app.services.binarization import binarize_image 
+from app.services.image_processing import binarize_image 
 
 celery = Celery("tasks", broker=settings.REDIS_URL, backend=settings.REDIS_URL)  # Создание экземпляра Celery
 
