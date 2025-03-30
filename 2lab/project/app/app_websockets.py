@@ -11,8 +11,4 @@ async def websocket_endpoint(websocket: WebSocket):  # определение а
             binarized_image = binarize_image(image, algorithm)  # Бинаризация
             await websocket.send_json({"binarized_image": binarized_image})  
     except Exception as e:  
-<<<<<<< HEAD
         await websocket.close()  
-=======
-        await websocket.close()  
->>>>>>> 89b9e74d5a782a17531ee52bb7e34a8641551291
