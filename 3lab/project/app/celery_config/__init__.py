@@ -12,7 +12,7 @@ load_dotenv()
 
 # инициализация redislite
 try:
-    redis_db_path = os.getenv("REDIS_DB_PATH", "/mnt/c/Users/kseni/PPP_24-25_4sem/2lab/project/redis.db")
+    redis_db_path = os.getenv("REDIS_DB_PATH", "/mnt/c/Users/kseni/PPP_24-25_4sem/3lab/project/redis.db")
     redis_instance = redislite.Redis(redis_db_path)
     redis_socket = redis_instance.socket_file
 
