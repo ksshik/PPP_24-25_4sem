@@ -8,7 +8,7 @@ class Settings(BaseSettings):
     ALGORITHM: str = "HS256"
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 30
     DATABASE_URL: str = "sqlite:///./app.db"
-    REDIS_DB_PATH: str = "/mnt/c/Users/kseni/PPP_24-25_4sem/2lab/project/redis.db"  
+    REDIS_DB_PATH: str = "/mnt/c/Users/kseni/PPP_24-25_4sem/3lab/project/redis.db"  
 
     class Config:
         env_file = ".env"
